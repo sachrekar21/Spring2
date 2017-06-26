@@ -6,7 +6,6 @@ phases:
       - apt-get update -y
       - sudo apt-get install default-jdk -y
       - sudo apt-get install software-properties-common -y
-      - sudo add-apt-repository ppa:foo/bar
       - wget http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
       - sudo tar -xzvf apache-maven-3.3.9-bin.tar.gz
       - sudo mv apache-maven-3.3.9 /usr/local/.
