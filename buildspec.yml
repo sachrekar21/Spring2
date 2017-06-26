@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - apt-get update -y
+      - sudo apt-get install default-jdk
       - wget http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
       - sudo tar -xzvf apache-maven-3.3.9-bin.tar.gz
       - sudo mv apache-maven-3.3.9 /usr/local/.
