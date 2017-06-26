@@ -7,7 +7,7 @@ phases:
       - sudo apt-get install default-jdk -y
       - sudo add-apt-repository ppa:git-core/ppa
       - sudo apt-get update -y
-      - sudo apt-get install -y software-properties-common python-software-properties
+      - sudo apt-get install software-properties-common -y
       - wget http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
       - sudo tar -xzvf apache-maven-3.3.9-bin.tar.gz
       - sudo mv apache-maven-3.3.9 /usr/local/.
