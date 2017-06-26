@@ -13,7 +13,7 @@ phases:
       - export MAVEN_OPTS="-Xms256m -Xmx512m"
       - export PATH=$M2:$PATH
       - sudo update-alternatives --config java
-      - export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
+      - export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
       - echo $JAVA_HOME
   pre_build:
     commands:
