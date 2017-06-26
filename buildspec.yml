@@ -5,7 +5,6 @@ phases:
     commands:
       - apt-get update -y
       - sudo apt-get install default-jdk -y
-      - sudo apt-get install software-properties-common -y
       - wget http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
       - sudo tar -xzvf apache-maven-3.3.9-bin.tar.gz
       - sudo mv apache-maven-3.3.9 /usr/local/.
@@ -16,8 +15,8 @@ phases:
       - sudo update-alternatives --config java
       - export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
       - echo $JAVA_HOME
-      - apt-get -y install docker
-      - sudo service docker start
+      - apt-get -y install docker.io
+      - systemctl start docker
       
       
   pre_build:
