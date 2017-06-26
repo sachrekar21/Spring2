@@ -11,6 +11,7 @@ phases:
       - export M2=$M2_HOME/bin
       - export MAVEN_OPTS="-Xms256m -Xmx512m"
       - export PATH=$M2:$PATH
+      - export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
       - echo $JAVA_HOME
   pre_build:
     commands:
