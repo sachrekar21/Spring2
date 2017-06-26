@@ -16,11 +16,7 @@ phases:
       - sudo update-alternatives --config java
       - export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
       - echo $JAVA_HOME
-      - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-      - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-      - sudo apt-get update
-      - apt-cache policy docker-ce
-      - sudo apt-get install -y docker-ce
+      - apt-get -y install docker
       - sudo service docker start
       
       
