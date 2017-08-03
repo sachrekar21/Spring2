@@ -1,0 +1,55 @@
+{
+    "family": "PetClinic",
+    "containerDefinitions": [
+        {
+            "image": "293329462814.dkr.ecr.us-east-1.amazonaws.com/shreyas-test:config-server",
+            "name": "config-server",
+            "cpu": 1,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8888,
+                    "hostPort": 8888
+                }
+        }
+		{
+            "image": "293329462814.dkr.ecr.us-east-1.amazonaws.com/shreyas-test:discovery-server",
+            "name": "discovery-server",
+            "cpu": 1,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8081,
+                    "hostPort": 8081
+                }
+        }
+		{
+            "image": "293329462814.dkr.ecr.us-east-1.amazonaws.com/shreyas-test:customers-service",
+            "name": "customers-service",
+            "cpu": 1,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8888,
+                    "hostPort": 8888
+                }
+        }
+		{
+            "image": "293329462814.dkr.ecr.us-east-1.amazonaws.com/shreyas-test:vets-service",
+            "name": "vets-service",
+            "cpu": 1,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8083,
+                    "hostPort": 8083
+                }
+        }
+		
+		
+    ]
+}
